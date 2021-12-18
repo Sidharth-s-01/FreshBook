@@ -1,0 +1,143 @@
+.topbarContainer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin: 0;
+    background-color: #3E00FF;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.topbarLeft {
+    flex: 3;
+}
+
+.topbarMiddle {
+    flex: 5;
+    
+}
+
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 18px;
+
+}
+
+.searchIcon{
+    margin-left: 5px;
+}
+
+.topbarMiddle input {
+    width: 90%;
+    height: 30px;
+    border: none;
+}
+
+.topbarMiddle input:focus {
+    outline: none !important;
+
+}
+
+
+.logoHeading {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 10px 20px;
+}
+
+
+
+
+.topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.iconsSection{
+    display: flex;
+    align-items: center;
+
+}
+
+.timeLine h2{
+    color: #fff;
+}
+
+.icon{
+   position: relative;
+}
+
+.iconNo{
+    text-align: center;
+    width: 18px;
+    font-size: 13px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 55%;
+    top:-13%;
+}
+
+.iconNo p{
+    margin: 0;
+}
+
+
+.eachIcon{
+    font-size: 30px !important;
+    margin: 0 30px !important;
+}
+
+.profileImage
+{
+    border: 3px solid #fff;
+    object-fit:cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width:480px) {
+    .topbarLeft{
+        display: none;
+    }
+    .topbarRight{
+        flex: 2;
+        margin-right: 0;
+    }
+
+    .timeLine{
+        display: none;
+    }
+
+    .iconsSection{
+        display: none;
+    }   
+
+    .topbarMiddle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 10;
+        width: 100%;
+    }
+
+    .topbarMiddle input{
+        width: 80%;
+    }
+}
