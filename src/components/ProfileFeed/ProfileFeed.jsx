@@ -260,12 +260,14 @@ function ProfileFeed(props) {
         </div>
 
         <div className="testingMobileView">
-          <div className="">
+          <div >
             {userInfo._id === props.user._id ? (
               profilefile ? (
                 <img
                   src={URL.createObjectURL(profilefile)}
                   alt=""
+                  className="coverImageMobie"
+
                 />
               ) : (
                 <img
