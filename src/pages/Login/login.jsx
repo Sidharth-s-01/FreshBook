@@ -6,14 +6,14 @@ import axios from "axios";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { Link } from "react-router-dom";
 import login from "../../redux/apicallredux";
-import {useDispatch,useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux";
 
 function Login() {
   const email = useRef();
   const password = useRef();
   const { user, isFetching, dispatch } = useContext(AuthContext);
   const dispatchRedux = useDispatch();
-  const {userInfo,error,pending}=useSelector(state=>state.user)
+  const { userInfo, error, pending } = useSelector((state) => state.user);
 
   function handleClick(e) {
     // console.log(email.current.value);
@@ -23,7 +23,10 @@ function Login() {
     //   { username: email.current.value, password: password.current.value },
     //   dispatch
     // );
-      login({ username: email.current.value, password: password.current.value },dispatchRedux)
+    login(
+      { username: email.current.value, password: password.current.value },
+      dispatchRedux
+    );
     console.log(userInfo);
   }
 
@@ -62,10 +65,12 @@ function Login() {
                 "Login"
               )}
             </button>
-            {error&&<h1>Ooops something went wrong !</h1>}
-            <Link to="/register" style={{ textDecoration: "none" }}>
-              <h3 className="signUptag">Sign Up</h3>
-            </Link>
+            {error && <h1>Ooops something went wrong !</h1>}
+            <div className="signUptag">
+              <Link to="/register" style={{textDecoration:"none",color:"black"}}>
+                <h3>Sign Up</h3>
+              </Link>
+            </div>
           </div>
         </form>
       </div>

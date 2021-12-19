@@ -60,6 +60,7 @@ function Feed(props) {
   // console.log(timeLinePosts)
   return (
     <div className="mainFeed">
+       
       {(profile|| props.home) ? <SharePost user={userInfo}/> :null }
       {timeLinePosts.map((eachPost) => {
         // console.log(eachPost);

@@ -13,13 +13,9 @@ import { useSelector } from "react-redux";
 const axios = require("axios");
 
 function Home() {
-  
   // const { user } = useContext(AuthContext);
   const { userInfo, error, pending } = useSelector((state) => state.user);
   console.log(userInfo);
-
-
-
 
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
@@ -30,6 +26,7 @@ function Home() {
 
   return (
     <>
+     
       <Topbar user={userInfo} />
       <div className="homeContainer">
         <LeftSidebar />
@@ -38,8 +35,6 @@ function Home() {
 
         <RightSidebar />
       </div>
-
-      
 
       {/* {isPortrait && isBigScreenOnMobile && (
         <>
