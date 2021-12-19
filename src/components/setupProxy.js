@@ -1,1 +1,1 @@
-export const api="http://localhost:8800";
+export const api="https://freshboook.herokuapp.com";
