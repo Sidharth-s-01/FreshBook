@@ -8,8 +8,8 @@ import { AuthContext } from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Sidepanel from "../sidepannelMobile/sidepanel";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+import {Menu,Close} from "@material-ui/icons";
+
 import { logOut } from "../../redux/userslice";
 
 function Topbar(props) {
@@ -30,7 +30,7 @@ function Topbar(props) {
       <div id="menuContent">
         <div className="menuItems">
           <div className="closeIconWrapper">
-            <CloseIcon className="closeIcon" onClick={closeMenu} />
+            <Close className="closeIcon" onClick={closeMenu} />
           </div>
           <div className="LeftBarProfilePic">
             <img src={userInfo.profilePic} alt="" />
@@ -61,7 +61,7 @@ function Topbar(props) {
       <div className="topbarContainer">
         <div className="topbarLeft">
           <div className="menuIconWrapper">
-            <MenuIcon className="menuIcon" onClick={openMenu} />
+            <Menu className="menuIcon" onClick={openMenu} />
           </div>
           <Link style={{ textDecoration: "none" }} to="/">
             <h1 className="logoHeading">Fresh book</h1>
