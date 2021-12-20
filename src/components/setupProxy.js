@@ -1,1 +1,1 @@
-export const api="https://freshboook.herokuapp.com";
+export const api="https://freshbookapi.herokuapp.com";

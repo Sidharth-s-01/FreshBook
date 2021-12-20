@@ -3,9 +3,8 @@ import axios from "axios";
 import "./allUsers.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-import {api} from "../setupProxy";
-import {useSelector} from "react-redux";
-
+import { api } from "../setupProxy";
+import { useSelector } from "react-redux";
 
 function AllUsers() {
   const { userInfo } = useSelector((state) => state.user);
@@ -16,7 +15,7 @@ function AllUsers() {
   useEffect(() => {
     const getAllUsers = async () => {
       try {
-        const res = await axios.get(api+"/api/admin/allusers");
+        const res = await axios.get(api + "/api/admin/allusers");
         // console.log(res.data);
         SetUsers(res.data);
       } catch (err) {
@@ -33,9 +32,7 @@ function AllUsers() {
           <Link to={"/profile/" + user._id} style={{ textDecoration: "none" }}>
             <img
               src={
-                user.profilePic
-                  ?user.profilePic
-                  : PF + "/avatars/noAvatar.png"
+                user.profilePic ? user.profilePic : PF + "/avatars/noAvatar.png"
               }
               alt=""
             />

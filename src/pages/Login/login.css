@@ -12,7 +12,7 @@
 
 
 .loginMain {
-    box-shadow: 0px 0px 34px 7px rgba(119, 119, 119, 0.71) !important;
+    /* box-shadow: 0px 0px 34px 7px rgba(119, 119, 119, 0.71) !important; */
 
     border-radius: 15px;
     display: flex;
@@ -84,7 +84,7 @@
 }
 
 
-.signUptag {
+.signUptag h3 {
     font-size: 15px;
     margin-top: 20px 0 0 20px;
     color: #fff;
@@ -169,5 +169,9 @@
         justify-content: right;
         color: #000 !important;
         text-align: right;
+    }
+
+    .signUptag h3{
+        color: #000;
     }
 }

@@ -147,7 +147,7 @@ function ProfileFeed(props) {
             />
           ) : (
             <img
-              src={userInfo.coverPic ? userInfo.coverPic : PF + "/cover/noCover.jpg"}
+              src={userInfo.coverPic ? userInfo.coverPic : PF + "/cover/noCover.png"}
               alt=""
               className="coverImage"
             />
@@ -155,7 +155,7 @@ function ProfileFeed(props) {
         ) : (
           <img
             src={
-              props.user.coverPic ? props.user.coverPic : PF + "/cover/noCover.jpg"
+              props.user.coverPic ? props.user.coverPic : PF + "/cover/noCover.png"
             }
             alt=""
             className="coverImage"

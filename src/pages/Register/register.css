@@ -72,7 +72,7 @@
 }
 
 .buttonRegister {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: none;
     outline: none;
     font-size: 20px;
@@ -86,7 +86,7 @@
 
 
 .buttonLoginRegisterPage{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: none;
     outline: none;
     font-size: 20px;
