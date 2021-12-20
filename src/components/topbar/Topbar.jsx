@@ -33,7 +33,7 @@ function Topbar(props) {
             <Close className="closeIcon" onClick={closeMenu} />
           </div>
           <div className="LeftBarProfilePic">
-            <img src={userInfo.profilePic} alt="" />
+            <img src={userInfo.profilePic? userInfo.profilePic:PF+"/avatars/noAvatar.png"} alt="" />
           </div>
           <Link style={{ textDecoration: "none" }} to="/" onClick={closeMenu}>
             <h3>Home</h3>
